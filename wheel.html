@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Success Lucky Wheel</title>
+    <link rel="stylesheet" href="wheel.css">
+</head>
+
+<body>
+
+    <h3>Spinning Wheel Configuration</h3>
+
+    <h4>Add Multiple Items</h4>
+    <textarea id="bulkItemInput" placeholder="Enter one item per line" rows="5" cols="30"></textarea><br>
+    <select id="targetListSelect">
+        <option value="poolList">Pool</option>
+        <option value="wheelList">Wheel Segments</option>
+    </select>
+    <button onclick="addBulkItems()">Add Items</button>
+
+    <div class="container">
+        <div>
+            <h4>Pool</h4>
+            <ul id="poolList" ondragover="allowDrop(event)" ondrop="handleDrop(event, 'poolList')"></ul>
+            
+            <button onclick="moveSelected('poolList', 'wheelList')">→ Move to Wheel</button>
+        </div>
+
+        <div>
+            <h4>Wheel Segments</h4>
+            <ul id="wheelList" ondragover="allowDrop(event)" ondrop="handleDrop(event, 'wheelList')"></ul>
+
+            <button onclick="moveSelected('wheelList', 'poolList')">← Move to Pool</button>
+        </div>
+
+    </div>
+    <div class="container">
+    <div class="notifications">
+        <h5><p id="notification">Notifications: -</p></h5>
+    </div>
+    </div>
+    <button onclick="initializeWheel()">Initialize Wheel</button>
+    <canvas id="wheel" width="500" height="500"></canvas>
+    <p id="wheelCountLabel">Wheel Segments: 0 items</p>
+    <button onclick="spin()">Spin the Wheel!</button>
+
+    <script src="wheel.js"></script>
+
+</body>
+
+</html>
