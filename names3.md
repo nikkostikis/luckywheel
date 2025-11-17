@@ -23,4 +23,8 @@
 'Sascha',
 'Mariana',
 'Nicholas',
-'Korbinian'
+'Talisson',
+'Korbinian',
+'Maryam',
+'Eleni',
+'Jozsef'
