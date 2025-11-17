@@ -6,32 +6,7 @@ let lastClickedIndex = null;
 
 
 // Initial pool items
-['Caroline',
-    'Felix',
-    'Kerstin',
-    'Lorenz',
-    'Michael',
-    'Poorti',
-    'Robert',
-    'Massi',
-    'Michael',
-    'Rosalind',
-    'Ethem',
-    'Noemi',
-    'Aram',
-    'Alexander',
-    'Bárbara',
-    'Julian',
-    'Frank',
-    'Artus',
-    'Ryan',
-    'Markus',
-    'Sonika',
-    'Sebastian',
-    'Sascha',
-    'Mariana',
-    'Nicholas',
-    'Korbinian'].forEach(text => {
+['Alexander', 'Artus', 'Bárbara', 'Caroline', 'Eleni', 'Ethem', 'Felix', 'Frank', 'Jozsef', 'Julian', 'Kerstin', 'Korbinian', 'Lorenz', 'Mariana', 'Markus', 'Maryam', 'Massi', 'Michael', 'Nicholas', 'Noemi', 'Poorti', 'Robert', 'Rosalind', 'Ryan', 'Sascha', 'Sebastian', 'Sonika', 'Souzana', 'Talisson'].forEach(text => {
         const li = createListItem(text);
         poolList.appendChild(li);
     });
@@ -264,3 +239,4 @@ function updateNotification(msg) {
     okElement.setAttribute('onclick', "resetNotification()");
     notificationElement.appendChild(okElement);
 }
+
