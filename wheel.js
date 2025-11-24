@@ -6,7 +6,7 @@ let lastClickedIndex = null;
 
 
 // Initial pool items
-['Alexander', 'Artus', 'Bárbara', 'Caroline', 'Eleni', 'Ethem', 'Felix', 'Frank', 
+['Alexander', 'Artus', 'Bárbara', 'Caroline', 'David', 'Eleni', 'Ethem', 'Felix', 'Frank', 
  'Jozsef', 'Julian', 'Kerstin', 'Korbinian', 'Lorenz', 'Mariana', 'Markus', 'Maryam', 
  'Massi', 'Michael', 'Nicholas', 'Noemi', 'Poorti', 'Robert', 'Rosalind', 'Ryan', 'Sascha', 
  'Sebastian', 'Sonika', 'Souzana', 'Talisson']
@@ -243,5 +243,6 @@ function updateNotification(msg) {
     okElement.setAttribute('onclick', "resetNotification()");
     notificationElement.appendChild(okElement);
 }
+
 
 
