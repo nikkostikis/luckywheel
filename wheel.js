@@ -13,7 +13,7 @@ let lastClickedIndex = null;
     });
 
 // Initial wheel items
-['Alexander', 'Bárbara', 'Caroline', 'David', 'Eleni', 'Ethem', 'Felix', 'Frank', 'Lorenz', 'Mariana', 'Markus', 'Maryam', 
+['Adrian', 'Alexander', 'Bárbara', 'Caroline', 'David', 'Eleni', 'Ethem', 'Felix', 'Frank', 'Lorenz', 'Mariana', 'Markus', 'Maryam', 
  'Massi', 'Michael', 'Nicholas', 'Noemi', 'Rosalind', 'Ryan', 'Sascha', 'Sebastian', 'Sonika', 'Talisson']
         .forEach(text => {
         const li = createListItem(text);
@@ -248,6 +248,7 @@ function updateNotification(msg) {
     okElement.setAttribute('onclick', "resetNotification()");
     notificationElement.appendChild(okElement);
 }
+
 
 
 
