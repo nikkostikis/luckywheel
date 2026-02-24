@@ -6,7 +6,7 @@ let lastClickedIndex = null;
 
 
 // Initial pool items
-['Alexander R', 'Bárbara B', 'David T', 'Eleni P', 'Jozsef F', 'Julian G', 'Kerstin W', 'Korbinian K', 'Markus G', 'Poorti M', 'Robert M', 'Ryan VE', 'Souzana G']
+['Alexander R', 'Bárbara B', 'David T', 'Eleni P', 'Jozsef F', 'Julian G', 'Kerstin W', 'Korbinian K', 'Markus G', 'Nicholas K', 'Poorti M', 'Robert M', 'Rosalind S', 'Ryan VE', 'Souzana G']
         .forEach(text => {
         const li = createListItem(text);
         poolList.appendChild(li);
@@ -14,7 +14,7 @@ let lastClickedIndex = null;
 
 // Initial wheel items
 ['Adrian T', 'Caroline H', 'Ethem N', 'Felix W', 'Frank Z', 'Lorenz W', 'Mariana C', 'Maryam I', 
- 'Massinissa M', 'Michael J', 'Nicholas K', 'Noemi P', 'Rosalind S', 'Sascha B', 'Sebastian B', 'Sonika N', 'Talisson B']
+ 'Massinissa M', 'Michael J', 'Noemi P', 'Sascha B', 'Sebastian B', 'Sonika N', 'Talisson B']
         .forEach(text => {
         const li = createListItem(text);
         wheelList.appendChild(li);
@@ -248,6 +248,7 @@ function updateNotification(msg) {
     okElement.setAttribute('onclick', "resetNotification()");
     notificationElement.appendChild(okElement);
 }
+
 
 
 
