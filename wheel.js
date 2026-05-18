@@ -6,6 +6,7 @@ let lastClickedIndex = null;
 
 
 // Initial pool items
+//['Alexander R', 'Bárbara B', 'David T', 'Eleni P', 'Jozsef F', 'Julian G', 'Kerstin W', 'Korbinian K', 'Markus G', 'Nicholas K', 'Poorti M', 'Robert M', 'Rosalind S', 'Ryan VE', 'Sebastian B', 'Souzana G']
 ['Alexander R', 'Bárbara B', 'David T', 'Eleni P', 'Jozsef F', 'Julian G', 'Kerstin W', 'Korbinian K', 'Markus G', 'Nicholas K', 'Poorti M', 'Robert M', 'Rosalind S', 'Ryan VE', 'Sebastian B', 'Souzana G']
         .forEach(text => {
         const li = createListItem(text);
@@ -13,8 +14,8 @@ let lastClickedIndex = null;
     });
 
 // Initial wheel items
-['Adrian T', 'Caroline H', 'Ethem N', 'Felix W', 'Frank Z', 'Lorenz W', 'Mariana C', 'Maryam I', 
- 'Massinissa M', 'Michael J', 'Noemi P', 'Sascha B', , 'Sonika N', 'Talisson B']
+['Adrian T', 'Caroline H', 'Ethem N', 'Felix W', 'Lorenz W', 'Mariana C', 'Maryam I', 
+ 'Massinissa M', 'Michael J', 'Noemi P', 'Sascha B', 'Sonika N', 'Talisson B']
         .forEach(text => {
         const li = createListItem(text);
         wheelList.appendChild(li);
